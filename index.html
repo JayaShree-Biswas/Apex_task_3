@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Advanced Styling & JavaScript — Demo</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header with Styled Navigation -->
+  <header class="site-header">
+    <h1>Advanced Styling and JavaScript</h1>
+    <nav class="navbar">
+      <a href="#quiz-section">Interactive Quiz</a>
+      <a href="#carousel-section">Image Carousel</a>
+      <a href="#api-section">Fetch API</a>
+    </nav>
+  </header>
+
+  <main class="container grid">
+    <!-- Quiz -->
+    <section id="quiz">
+  <h2>Interactive Quiz</h2>
+  <p>Objective: Build an interactive quiz with multiple questions.</p>
+
+  <div id="quiz-container">
+    <p id="question"></p>
+    <div id="options"></div>
+  </div>
+
+  <button id="prev">Previous</button>
+  <button id="next">Next</button>
+  <button id="restart">Restart Quiz</button>
+
+</div>
+
+<p id="result"></p>  <!-- This will show Correct or Wrong -->
+
+</section>
+
+
+  <!-- Carousel -->
+<section class="card" id="carousel-section">
+    
+  <h2>Image Carousel</h2>
+  <p>Objective: Rotate images and allow user interaction.</p>
+
+  <div id="carousel-container">
+    <button id="prevImg">‹</button>
+    <img id="carouselImage" src="images/img1.jpg" alt="carousel image">
+    <button id="nextImg">›</button>
+  </div>
+
+  <div class="carousel-controls">
+    <button id="pause">Pause</button>
+    <button id="play">Play</button>
+  </div>
+</section>
+
+<div class="section">
+  <h2>😂 Random Jokes</h2>
+  <p>Objective: Fetch real-time jokes and display them in a fun way.</p>
+  <button id="getJoke">Get a Joke</button>
+  <p id="jokeDisplay">Click the button to hear a joke!</p>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,138 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* ===== Global Styles ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #f0f4f8, #d9e4ec);
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* ===== Page Title ===== */
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #2a4365;
+  font-size: 2.2rem;
+}
+
+/* ===== Section Boxes ===== */
+.section {
+  background: #fff;
+  border-radius: 15px;
+  padding: 25px;
+  margin-bottom: 25px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s;
+}
+
+.section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* ===== Section Headings ===== */
+.section h2 {
+  margin-bottom: 15px;
+  font-size: 1.6rem;
+  color: #1e3a8a;
+  border-bottom: 2px solid #3b82f6;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* ===== Buttons ===== */
+button {
+  padding: 10px 18px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #3b82f6;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #2563eb;
+}
+
+/* ===== Quiz Option Buttons ===== */
+.option-btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 2px solid #1e90ff;  /* blue border */
+  border-radius: 6px;
+  background: white;          /* white background */
+  color: #1e90ff;             /* blue text */
+  font-size: 16px;
+  cursor: pointer;
+  text-align: left;           /* left aligned text */
+  transition: 0.3s;
+}
+
+.option-btn:hover {
+  background: #1e90ff; /* fill blue on hover */
+  color: white;
+}
+
+/* ===== Responsive Layout ===== */
+@media (min-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+
+  .container .section:nth-child(3) {
+    grid-column: span 2; /* Make API box full width */
+  }
+}
+
+#options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+/* ===== Carousel Container ===== */
+.carousel-container {
+  width: 500px;       /* fixed width */
+  height: 300px;      /* fixed height */
+  margin: auto;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+}
+
+/* ===== Carousel Image ===== */
+#carouselImage {
+  width: 500px;
+  height: 300px;
+  margin: 20px auto;
+  object-fit: cover;  /* crops edges but fills box uniformly */
+  border-radius: 12px;
+}
+
+#jokeDisplay {
+  margin-top: 15px;
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #444;
+}
